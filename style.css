@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+.logo{
+	width: 7%;
+	height: 7%;
+}
+
+.card-img-top {
+  max-height: 250px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.shop-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d6efd;
+  animation: slideFromLeft 1s ease-out;
+  text-shadow: 0 0 8px rgba(13, 110, 253, 0.6);
+}
+
+/* Typewriter effect for slogan */
+.shop-slogan.typewriter {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #0d6efd;
+  width: 0;
+  animation: typing 4s steps(60, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Slide from left animation */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.carousel-img-small {
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
+}
